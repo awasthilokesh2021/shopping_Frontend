@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { Provider } from "react-redux";
+import  Provider  from "react-redux";
 
 export const Logincontext = createContext(null);
 

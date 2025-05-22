@@ -26,7 +26,7 @@ const Slide = ({ products }) => {
               <img
                 src={product.url}
                 alt="product"
-                className="h-50 object-contain mb-2"
+                className="h-40 object-contain mb-2"
               />
               <p className="text-sm font-medium text-gray-800 line-clamp-1">
                 {product.title.shortTitle}

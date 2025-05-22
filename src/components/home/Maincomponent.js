@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "../redux/actions/actions";
-
 import Banner from "./Banner";
 import Slide from "./Slide";
 import Homebanner from "./Homebanner";
+import { getProducts } from "../../Redux/slices/productSlice";
 
 const Maincomponent = () => {
   const dispatch = useDispatch();
-  const { products } = useSelector((state) => state.getproductsdata);
+  const { products } = useSelector((state) => state.products);
 
   useEffect(() => {
     dispatch(getProducts());

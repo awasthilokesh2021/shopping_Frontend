@@ -43,14 +43,14 @@ const Cart = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4">
       {inddata && (
-        <div className="max-w-4xl mx-auto bg-white p-6 rounded shadow grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-5xl mx-auto bg-white p-6 rounded shadow grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <img
               src={inddata.detailUrl}
               alt="cart"
-              className="w-full h-full  object-contain rounded"
+              className="w-full h-full object-contain rounded"
             />
-            <div className="flex gap-4 mt-4">
+            <div className="flex gap-4 ">
               <button
                 className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 rounded"
                 onClick={() => addtocart(inddata.id)}
