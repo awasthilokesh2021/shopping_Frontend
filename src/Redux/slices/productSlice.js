@@ -3,7 +3,7 @@ import axios from "axios";
 
 // 👇 Async thunk for fetching products
 export const getProducts = createAsyncThunk("products/get", async () => {
-  const res = await axios.get("http://localhost:8000/getproducts");
+  const res = await axios.get("https://shopping-backend-hsr3.onrender.com/getproducts");
   return res.data;
 });
 
