@@ -27,7 +27,7 @@ const Cart = () => {
   const addtocart = async (id) => {
     try {
       const res = await axios.post(
-        `http://localhost:8000/addcart/${id}`,
+        `https://shopping-backend-hsr3.onrender.com/addcart/${id}`,
         { inddata },
         { withCredentials: true }
       );

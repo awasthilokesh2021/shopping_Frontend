@@ -18,7 +18,7 @@ const Signin = () => {
     const { email, password } = logdata;
 
     try {
-      const res = await fetch("http://localhost:8000/login", {
+      const res = await fetch("https://shopping-backend-hsr3.onrender.com/login", {
         method: "POST",
         headers: {
           Accept: "application/json",

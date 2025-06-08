@@ -24,7 +24,7 @@ const Navbar = () => {
 
   const validuser = async () => {
     try {
-      const res = await fetch("http://localhost:8000/validuser", {
+      const res = await fetch("https://shopping-backend-hsr3.onrender.com/validuser", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -47,7 +47,7 @@ const Navbar = () => {
 
   const logoutuser = async () => {
     try {
-      const res = await fetch("http://localhost:8000/logout", {
+      const res = await fetch("https://shopping-backend-hsr3.onrender.com/logout", {
         method: "GET",
         headers: {
           Accept: "application/json",

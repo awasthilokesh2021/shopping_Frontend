@@ -8,7 +8,7 @@ const Option = ({ deletedata, get }) => {
 
   const removeValue = async (id) => {
     try {
-      const res = await fetch(`http://localhost:8000/remove/${id}`, {
+      const res = await fetch(`https://shopping-backend-hsr3.onrender.com/remove/${id}`, {
         method: "GET",
         headers: {
           Accept: "application/json",

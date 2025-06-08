@@ -9,7 +9,7 @@ const Bynow = () => {
 
   const getdatabuy = async () => {
     try {
-      const res = await fetch("http://localhost:8000/cartdetails", {
+      const res = await fetch("https://shopping-backend-hsr3.onrender.com/cartdetails", {
         method: "GET",
         headers: {
           Accept: "application/json",
