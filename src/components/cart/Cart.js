@@ -12,7 +12,7 @@ const Cart = () => {
 
   const getinddata = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/getproducts/${id}`);
+      const res = await axios.get(`https://shopping-backend-hsr3.onrender.com/getproducts/${id}`);
       setIndedata(res.data);
     } catch (error) {
       console.error("Error fetching product details:", error);
